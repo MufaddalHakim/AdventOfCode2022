@@ -17,5 +17,5 @@ echo "$template" > ./day$1/p2.js
 
 
 # Create input and test files
-touch "./day$1/test.txt"
+node getTestInput.js $1 > "./day$1/test.txt"
 curl -s https://adventofcode.com/2022/day/$1/input --cookie "session=$session" > "./day$1/input.txt"
