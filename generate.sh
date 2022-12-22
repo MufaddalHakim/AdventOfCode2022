@@ -9,6 +9,7 @@ read -d '' template << EOM
 const fs = require('fs');
 
 const input = fs.readFileSync(\`\${process.argv[2]}.txt\`, 'utf-8').split('\\\n');
+input.pop();
 EOM
 
 mkdir ./day$1
